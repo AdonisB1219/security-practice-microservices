@@ -22,6 +22,11 @@ spring:
          predicates:
            - Path=/auth/**
 
+       - id: admin-service
+         uri: lb://ADMIN-SERVICE
+         predicates:
+           - Path=/admin/**
+
  application:
    name: SWIGGY-GATEWAY
 

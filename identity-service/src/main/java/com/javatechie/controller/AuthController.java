@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
+
+
     @Autowired
     private AuthService service;
 
-    @Autowired
-    private AuthenticationManager authenticationManager;
 
     @PostMapping("/register")
     public String addNewUser(@RequestBody UserCredential user) {
