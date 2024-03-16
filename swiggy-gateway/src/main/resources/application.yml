@@ -25,6 +25,9 @@ spring:
  application:
    name: SWIGGY-GATEWAY
 
+server:
+  port: 8083
+
 eureka:
   client:
     service-url:
